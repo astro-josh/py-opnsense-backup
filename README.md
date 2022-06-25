@@ -19,6 +19,11 @@ to remotely backup OPNsense configuration.
 10. Click save to save adding API key for user.
 
 ### Usage
-```python get_opnsense_config.py --key <user_api_key> --secret <user_api_secret> --host <ip_or_fqdn_of_opnsense> --path <optional path to save file>```
+
+#### Script
+```python opnsense_backup/get_opnsense_config.py --key <user_api_key> --secret <user_api_secret> --host <ip_or_fqdn_of_opnsense> --path <optional path to save file>```
+
+#### Entry point (installed)
+```get-opnsense-config --key <user_api_key> --secret <user_api_secret> --host <ip_or_fqdn_of_opnsense> --path <optional path to save file>```
 
 The script will save a configuration file of the name `opnsense-config-YYYY-MM-DD.xml` to path specified or the current working directory if none provided.
