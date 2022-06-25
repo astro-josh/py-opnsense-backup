@@ -6,7 +6,7 @@ authors = ["Josh Alexander"]
 repository = "https://github.com/obviousrebel/py-opnsense-backup"
 
 [tool.poetry.scripts]
-poetry = 'opnsense_backup.get_opnsense_config.py:run'
+get-opnsense-config = 'opnsense_backup.get_opnsense_config:main'
 
 [tool.poetry.dependencies]
 python = ">=3.8.0"
