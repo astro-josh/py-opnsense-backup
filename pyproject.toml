@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "py-opnsense-backup"
+version = "0.1.0"
+description = "Simply script for retrieving OPNSense configuration file from an OPNSense host using API."
+authors = ["Josh Alexander"]
+repository = "https://github.com/obviousrebel/py-opnsense-backup"
+
+[tool.poetry.scripts]
+poetry = 'opnsense_backup.get_opnsense_config.py:run'
+
+[tool.poetry.dependencies]
+python = ">=3.8.0"
+requests = ">=2.27.1"
+defusedxml = "0.7.1"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
